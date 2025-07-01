@@ -1,12 +1,12 @@
-Focus Watermark Lock
+# Focus Watermark Lock
 
-Cos’è
+## Cos’è
 
 Un’applicazione Python/Qt5 che aggiunge watermark ai PDF con logo Focus, blocca copia/modifica (ma non la visualizzazione), salva i file processati in una cartella dedicata, mantiene il conteggio, e funziona su macOS e Windows.
 
 ⸻
 
-Prerequisiti
+## Prerequisiti
 	•	Python 3.10+ (Scarica qui)
 	•	Pip installato (python -m ensurepip)
 	•	Internet per installare i pacchetti
@@ -14,7 +14,7 @@ Prerequisiti
 
 ⸻
 
-1. Preparazione Cartella di Lavoro
+### 1. Preparazione Cartella di Lavoro
 	1.	Crea una cartella chiamata ad esempio FocusWatermarkLock-macOS o FocusWatermarkLock-Windows.
 	2.	Scarica/Salva in questa cartella:
 	•	focus_watermark_lock.py (lo script principale)
@@ -24,7 +24,7 @@ Prerequisiti
 
 ⸻
 
-2. Installazione automatica tramite script bash
+### 2. Installazione automatica tramite script bash
 
 (Consigliato per utenti che sanno usare il terminale/PowerShell/Git Bash)
 	1.	Copia il file qui sotto come setup_focus_watermark.sh nella cartella di progetto:
@@ -122,7 +122,7 @@ chmod +x setup_focus_watermark.sh
 
 ⸻
 
-3. Installazione manuale dipendenze (opzionale)
+## 3. Installazione manuale dipendenze (opzionale)
 
 MacOS e Windows
 
@@ -137,7 +137,7 @@ pip install PyQt5 PyPDF2 watchdog reportlab pillow
 
 ⸻
 
-4. Creazione Icona
+## 4. Creazione Icona
 
 MacOS (.icns)
 	•	Ridimensiona il logo a 1024x1024 px e salvalo come icon_1024x1024.png.
@@ -148,7 +148,7 @@ Windows (.ico)
 
 ⸻
 
-5. Esecuzione diretta dell’app
+## 5. Esecuzione diretta dell’app
 
 python focus_watermark_lock.py
 
@@ -156,7 +156,7 @@ python focus_watermark_lock.py
 
 ⸻
 
-6. Creare la versione compilata
+## 6. Creare la versione compilata
 
 macOS:
 
@@ -172,7 +172,7 @@ Troverai l’eseguibile in dist/Focus Watermark Lock.exe
 
 ⸻
 
-7. Uso dell’applicazione
+## 7. Uso dell’applicazione
 	1.	Scegli la cartella da monitorare tramite il bottone.
 	2.	Trascina i tuoi PDF nella cartella:
 	•	Verranno watermarkati e salvati nella sottocartella Watermark
@@ -183,7 +183,7 @@ Troverai l’eseguibile in dist/Focus Watermark Lock.exe
 
 ⸻
 
-8. FAQ & Risoluzione problemi
+## 8. FAQ & Risoluzione problemi
 	•	Icona non visibile: verifica che sia .icns (Mac) o .ico (Windows) e che sia presente.
 	•	Errore “no such file or directory: logo_focus.png”: il logo deve essere nella stessa cartella dello script/app.
 	•	Permessi cartelle: assicurati di avere permessi di scrittura nella cartella monitorata.
@@ -196,7 +196,7 @@ pip install PyQt5 PyPDF2 watchdog reportlab pillow
 
 ⸻
 
-9. Struttura della cartella finale
+## 9. Struttura della cartella finale
 
 FocusWatermarkLock-OS/
 │
@@ -212,7 +212,7 @@ FocusWatermarkLock-OS/
 
 ⸻
 
-10. Note aggiuntive
+## 10. Note aggiuntive
 	•	L’app NON chiede password all’apertura dei PDF watermarkati.
 	•	Il blocco di copia/modifica è quello standard dei PDF.
 	•	Per modifiche estetiche o funzioni, puoi modificare il file focus_watermark_lock.py.
