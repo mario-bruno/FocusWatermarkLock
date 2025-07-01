@@ -1,0 +1,5 @@
+PyQt5
+PyPDF2
+reportlab
+Pillow
+watchdog
